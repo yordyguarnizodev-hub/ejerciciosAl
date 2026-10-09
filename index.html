@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cuadro de empleados</title>
+  </head>
+  <body>
+    <header id="header-container">
+      <button class="button add" onclick="addEmployee()">
+        Agregar usuario
+      </button>
+      <button class="button delete" onclick="deleteEmployees()">
+        Eliminar usuarios
+      </button>
+    </header>
+    <main>
+      <h2 id="tittle">Lista de empleados</h2>
+      <table id="table-container">
+        <thead class="table table-header">
+          <tr>
+            <th class="table-item">Nombre del empleado</th>
+            <th class="table-item">Cargo</th>
+            <th class="table-item">Ciudad</th>
+            <th class="table-item">Edad</th>
+            <th class="table-item">Dias laborados</th>
+            <th class="table-item">Salario base</th>
+            <th class="table-item">Salario devengado</th>
+          </tr>
+        </thead>
+        <tbody class="table table-body"></tbody>
+      </table>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
